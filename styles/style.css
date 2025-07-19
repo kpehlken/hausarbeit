@@ -1,0 +1,210 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-v19-latin-regular.woff2") format("woff2");
+}
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-v19-latin-700.woff2") format("woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+aside {
+    width: 30%;
+    height: auto;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.jpfordt_logo {
+    width: 8em;
+    height: fit-content;
+}
+
+.jpfordt_nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    list-style-type: none;
+}
+
+.jpfordt_nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #73AB84;
+}
+
+.jpfordt_nav-link:hover, .jpfordt_nav-link:focus, .jpfordt_nav-link:active   {
+    color: #99D19C;
+    text-decoration: underline;
+}
+
+.dkuzey_hero-section {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.dkuzey_hero-text-container {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.dkuzey_hero-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 72px;
+    word-break: break-all;
+}
+
+.dkuzey-facts-section, .jpfordt_appointments-section  {
+    margin: 5rem 2rem;
+    text-align: center;
+}
+
+.dkuzey_fact-card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dkuzey_fact-card {
+    width: 15rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    background-color: #73AB84;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-top: 1em;
+    border-radius: 5%;
+}
+
+.jpfordt_heading {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 1em;
+}
+
+.jpfordt_heading-2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1em;
+}
+
+.jpfordt_text {
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.jpfordt_appointment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.jpfordt_appointment-card {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.jpfordt_appointment-card strong {
+    font-size: 28px;
+    width: 20%;
+}
+
+.jpfordt_appointment-card p {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 1em;
+    width: 80%;
+}
+
+
+.primary-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #99D19C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.primary-button:hover, .primary-button:focus, .primary-button:active {
+    background-color: #73AB84;
+}
+
+@media screen and (min-width: 480px) {
+    .dkuzey_fact-card-container {
+        flex-direction: row;
+        padding: 1rem 10rem;
+    }
+
+    .jpfordt_text {
+        width: 60%;
+    }
+
+    .jpfordt_appointment-card {
+      width: 60%;
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
