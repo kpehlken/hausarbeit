@@ -188,24 +188,23 @@ figure, img {
     flex-direction: column;
 }
 
-.jpfordt_appointment-card {
+.jpfordt_appointment-card, .jpfordt_appointment-card-big {
     display: flex;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
     margin: 0 auto;
     padding: 0.5em;
     border-bottom: 1px solid #d0d0d0;
 }
 
-.jpfordt_appointment-card strong {
+.jpfordt_appointment-card strong, .jpfordt_appointment-card-big strong {
     font-size: 28px;
-    width: 20%;
+    width: 15%;
 }
 
-.jpfordt_appointment-card p {
+.jpfordt_appointment-title {
     font-size: 24px;
     text-align: left;
-    margin-left: 1em;
-    width: 80%;
 }
 
 
@@ -297,6 +296,8 @@ figure, img {
 .jpfordt_post-image img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .jpfordt_post-image figcaption {
@@ -323,6 +324,12 @@ figure, img {
 
 .jpfordt_post-author {
     margin-bottom: 10px;
+}
+
+.jpfordt_vertical-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
 }
 
 @media screen and (min-width: 480px) {
@@ -353,9 +360,21 @@ figure, img {
       width: 60%;
     }
 
+    .jpfordt_appointment-card p {
+        margin-left: 1em;
+    }
+
     /* Aktuelles Seite */
     .jpfordt_post-container {
         width: 300px;
+    }
+
+    .jpfordt_appointment-card, .jpfordt_appointment-card-big {
+        flex-direction: row;
+    }
+
+    .jpfordt_appointment-card-big {
+        width: 100%;
     }
 }
 
@@ -384,6 +403,8 @@ figure, img {
     .dkuzey-contact-form {
         width: 600px;
     }
+
+
 
 }
 
