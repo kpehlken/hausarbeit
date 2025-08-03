@@ -237,6 +237,10 @@ figure, img {
     padding: 1em 2em;
 }
 
+.dkuzey_bold {
+    font-weight: bold;
+}
+
 /* Impressum Seite */
 .jpfordt_impressum {
     padding: 1em;
@@ -344,6 +348,19 @@ figure, img {
     margin-top: 15px;
 }
 
+
+/* Kultur Seite */
+
+.dkuzey_kunstbild {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.dkuzey_kunstbild-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 @media screen and (min-width: 480px) {
     nav {
         flex-direction: row;
@@ -410,6 +427,11 @@ figure, img {
     /* Kontaktseite */
     .dkuzey-contact-form {
         width: 600px;
+    }
+
+    /* Kulturseite */
+    .dkuzey_kunstbild {
+        width: 60%;
     }
 
 }
