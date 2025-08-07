@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+    height: fit-content;
+}
+
+h2, h3, p, figcaption {
+    page-break-inside: avoid;
+}
+
+section {
+    page-break-before: always;
+}
