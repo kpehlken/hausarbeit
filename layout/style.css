@@ -190,7 +190,7 @@ figure, img {
     margin-top: 1em;
 }
 
-.jpfordt-text-centered {
+.jpfordt_text-centered {
     text-align: center;
 }
 
@@ -250,7 +250,7 @@ figure, img {
     min-height: 100vh;
 }
 
-.dkuzey-main {
+.dkuzey_main {
     width: 100%;
     padding: 1em 2em;
 }
@@ -265,7 +265,7 @@ figure, img {
 }
 
 /* Kontaktseite */
-.dkuzey-contact-form {
+.dkuzey_contact-form {
     width: 90%;
     background-color: #fff;
     margin: 2rem auto 0;
@@ -319,7 +319,7 @@ figure, img {
 .jpfordt_post-image img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -353,6 +353,29 @@ figure, img {
     display: flex;
     flex-direction: column;
     width: 75%;
+}
+
+
+.dkuzey_copied-post {
+    text-decoration: none;
+}
+
+.dkuzey_copied-post-title {
+    color: #000000;
+}
+
+.dkuzey_copied-post:hover .dkuzey_copied-post-title {
+    text-decoration: underline;
+}
+
+.dkuzey_copied-post-description {
+    font-weight: normal;
+    font-size: 14px;
+    color: #5b5b5b;
+}
+
+.dkuzey_copied-post-text {
+    text-underline: none;
 }
 
 /* Dienstleistungen Seite */
@@ -439,12 +462,12 @@ figure, img {
         flex-direction: row;
     }
 
-    .dkuzey-main {
+    .dkuzey_main {
         width: 70%;
     }
 
     /* Kontaktseite */
-    .dkuzey-contact-form {
+    .dkuzey_contact-form {
         width: 600px;
     }
 
